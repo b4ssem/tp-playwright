@@ -41,6 +41,6 @@ test('Should submit the form and make sure it has been submitted', async ({ page
   }
   await page.locator('#parcours').selectOption('Parcours développement web et dispositifs interactifs');
   await page.locator('#portfolio').fill('https://b4ssem.com/');
-  await page.locator('button').filter({ hasText: 'Envoyer' }).click();
+  await page.locator("button[type='submit']").first().click()
   await expect(page.locator('section').nth(0)).toBeVisible();
 });
