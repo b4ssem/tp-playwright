@@ -1,0 +1,20 @@
+{
+  "name": "playwright",
+  "version": "2024.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "e2e": "npx playwright test --ui",
+    "playwright": "npx playwright test",
+    "server": "node server.js",
+    "report": "npx playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "latest",
+    "express": "latest"
+  }
+}
